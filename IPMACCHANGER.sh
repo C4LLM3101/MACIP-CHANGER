@@ -40,7 +40,7 @@ if [[ "$mac_choice" == "yes" ]]; then
 else
     
     echo -e "\033[33m[?] First copy your Private IP address and then paste it here as input \033[0m"
-    echo -e "\033[33m[?] Enter the new IP address:\033[0m"
+    echo -e "\033[33m[?] Enter the new Private IP address:\033[0m"
     read new_ip
 
     # Change the IP address
