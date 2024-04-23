@@ -18,7 +18,7 @@ read mac_choice
 
 # Check if the input is empty
 if [[ -z "$mac_choice" ]]; then
-    echo -e "\033[33m[?] No input provided. Exiting this program. .......\033[0m"
+    echo -e "\033[33m[?] No input provided. Exiting this program. .......>>\033[0m"
     exit 1
 fi
 
@@ -36,7 +36,7 @@ if [[ "$mac_choice" == "yes" ]]; then
     ifconfig eth0 up
     ifconfig
 
-    echo -e "\033[33m[?] MAC address changed successufully.......\033[0m"
+    echo -e "\033[33m[?] MAC address changed successufully.......>>\033[0m"
 else 
     
     echo -e "\033[33m[?] First copy your Private IP address and then paste it here as input \033[0m"
@@ -47,8 +47,8 @@ else
     ifconfig eth0 "$new_ip" 
     ifconfig | grep inet 
 
-    echo -e "\033[33m[?] Private IP address changed successufully.......\033[0m"
+    echo -e "\033[33m[?] Private IP address changed successufully.......>>\033[0m"
     
 fi
  echo -e "\033[33m[?] After running this program restart your system so that you can see your output \033[0m"
-  echo -e "\033[33m[?] done................... \033[0m"
+  echo -e "\033[33m[?] done...................>> \033[0m"
